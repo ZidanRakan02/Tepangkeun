@@ -73,7 +73,7 @@
                         <form class="col s12">
                             <div class="row">
                                 <div class="social-btn">
-                                    <a class="waves-light" href="{{ url('/social/auth/redirect', ['twitter']) }}" id="twitter">Log in with Twitter</a>
+                                    <a class="waves-light" href="{{ url('/social/auth/redirect', ['twitter']) }}" id="twitter">Log in with Facebook</a>
                                 </div>
                             </div>
                             <div class="row">

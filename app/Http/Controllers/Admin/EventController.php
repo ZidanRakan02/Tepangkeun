@@ -49,7 +49,7 @@ class EventController extends AdminController
     {
         $rules = [
             'name' => 'required|max:50|unique:events,name',
-            'image' => 'required|mimes:jpeg, jpg, png',
+            'image' => 'required',
             'date' => 'required|date|date_format:Y/m/d|after_or_equal:today',
             'venue' => 'required|max:50',
             'price' => 'required|numeric|min:0',

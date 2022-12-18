@@ -8,6 +8,7 @@ use App\Model\Room;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class RoomTypeController extends AdminController
 {
@@ -161,7 +162,8 @@ class RoomTypeController extends AdminController
      */
     public function destroy($id)
     {
-        $room_type = RoomType::find($id);  
+        $room_type = RoomType::find($id); 
+        $room=Room::find($id); 
             foreach ($room->room_bookings as $booking) {
                 $booking->delete();
         }

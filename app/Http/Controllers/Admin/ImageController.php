@@ -58,7 +58,7 @@ class ImageController extends AdminController
     {
         $rules = [
             'caption' => 'max:30',
-            'image' => 'required|mimes:jpeg, jpg, png',
+            'image' => 'required',
             'is_primary' => 'required',
             'status' => 'required'
         ];
