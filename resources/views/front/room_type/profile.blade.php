@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col s12 avail-title">
                                     <h4>Cek ketersediaan</h4>
-                                    <p>Tharga akhir dihitung dengan memberi {{$room_type->discount_percentage}}% discount, menambahkan {{config('app.service_charge_percentage')}}% biaya layanan dan menambahkan {{config('app.vat_percentage')}}% PPN dalam harga asli cafe.</p>
+                                    <p>harga akhir dihitung dengan memberi {{$room_type->discount_percentage}}% discount, menambahkan {{config('app.service_charge_percentage')}}% biaya layanan dan menambahkan {{config('app.vat_percentage')}}% PPN dalam harga asli cafe.</p>
                                 </div>
                             </div>
                         <input name="booking_validation" type="hidden" value="0">
